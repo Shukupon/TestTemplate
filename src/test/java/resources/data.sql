@@ -2,7 +2,7 @@ INSERT INTO goods(
 	name,
 	price
 )VALUES(
-	"avocado",
+	'avocado',
 	180
 );
 	
