@@ -26,7 +26,7 @@ public class DemoController {
 	DemoService demoService;
 
 	@PostMapping("/shopping")
-	public ResponseEntity<Boolean> shopping(@RequestBody Goods goods) {
+	public ResponseEntity<Boolean> shopping(@RequestBody Goods goods) throws Exception {
 
 		logger.info("処理開始");
 		Boolean response = demoService.decide(goods);
