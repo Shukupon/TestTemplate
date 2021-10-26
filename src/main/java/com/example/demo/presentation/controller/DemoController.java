@@ -1,4 +1,4 @@
-package com.example.demo.presentation;
+package com.example.demo.presentation.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,7 +32,6 @@ public class DemoController {
 		Boolean response = demoService.decide(goods);
 		logger.info("処理完了");
 
-		
 		HttpHeaders responseHeaders = new HttpHeaders();
 		responseHeaders.setContentType(MediaType.APPLICATION_JSON);
 		return ResponseEntity.status(HttpStatus.OK).headers(responseHeaders).body(response);

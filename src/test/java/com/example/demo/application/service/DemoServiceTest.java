@@ -68,7 +68,7 @@ public class DemoServiceTest {
 		Throwable e = assertThrows(Exception.class, () -> {
 			target.decide(goods);
 		});
-		
+
 		// throwされるExceptionの元のクラスをassert
 		assertTrue(e.getCause() instanceof DataAccessException);
 	}

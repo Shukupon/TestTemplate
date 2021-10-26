@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.application.repository.DemoRepository;
 import com.example.demo.bean.Goods;
-import com.example.demo.presentation.DemoController;
 
 // 業務処理を行うクラス
 @Service
