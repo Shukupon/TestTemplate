@@ -46,7 +46,7 @@ public class DemoServiceTest {
 		// 渡す引数の準備
 		Goods goods = createGoods();
 
-		// どんなGoods型の引数でも作成したオブジェクトを返すようにmockを定義
+		// どんなString型の引数でも作成したオブジェクトを返すようにmockを定義
 		when(mockRepository.findByName(Mockito.anyString())).thenReturn(createOrdinaryGoods());
 
 		// assert
@@ -60,7 +60,7 @@ public class DemoServiceTest {
 		// 渡す引数の準備
 		Goods goods = createGoods();
 
-		// どんなGoods型の引数でもtrueを返すようにmockを定義
+		// どんなString型の引数でもDataAccessExceptionを返すようにmockを定義
 		doThrow(new DataAccessException("") {
 		}).when(mockRepository).findByName(Mockito.anyString());
 
